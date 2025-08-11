@@ -20,4 +20,9 @@ VITE_API_URL = "https://staging-api.example.com"
 VITE_API_URL = "http://localhost:3000"
 
 [functions]
-node_version = "18.19.1"
+
+    [functions.node_version]
+    external_node_modules = [
+      "module-one",
+      "module-two"
+    ]
