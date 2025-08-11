@@ -7,8 +7,7 @@ base = ""
 NODE_ENV = "production"
 VITE_APP_ENV = "production"
 
-[[plugins]]
-package = "@netlify/plugin-tsbuild"
+
 
 [context.production.environment]
 VITE_API_URL = "https://api.example.com"
@@ -27,5 +26,5 @@ VITE_API_URL = "http://localhost:3000"
       "module-two"
     ]
 
-package = "@netlify/plugin-tsbuild"
+
 
