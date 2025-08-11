@@ -10,14 +10,14 @@ VITE_APP_ENV = "production"
 [[plugins]]
 package = "@netlify/plugin-tsbuild"
 
-[context.production]
-environment = { VITE_API_URL = "https://api.example.com" }
+[context.production.environment]
+VITE_API_URL = "https://api.example.com"
 
-[context.deploy-preview]
-environment = { VITE_API_URL = "https://staging-api.example.com" }
+[context.deploy-preview.environment]
+VITE_API_URL = "https://staging-api.example.com"
 
-[context.dev]
-environment = { VITE_API_URL = "http://localhost:3000" }
+[context.dev.environment]
+VITE_API_URL = "http://localhost:3000"
 
 [functions]
 node_version = "18.19.1"
